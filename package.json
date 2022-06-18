@@ -20,11 +20,12 @@
   "homepage": "https://github.com/own-me/gumball-machine#readme",
   "dependencies": {
     "@react-three/fiber": "^7.0.24",
-    "three": "^0.136.0",
+    "@types/react-router": "^5.1.18",
+    "@types/styled-components": "^5.1.15",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5.3.3",
-    "@types/styled-components": "^5.1.15"
+    "three": "^0.136.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

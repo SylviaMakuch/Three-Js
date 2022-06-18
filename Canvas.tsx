@@ -1,9 +1,9 @@
 import React from 'react'
 import { Canvas as ThreeCanvas } from '@react-three/fiber';
-import Donut from './components/donut';
+import Donut from "./components/Donut/Donut";
 
 
-const Canvas = () => {
+const Canvas = (props) => {
     return (
         <ThreeCanvas>
             <camera position={[-3, 30, 10]} />
