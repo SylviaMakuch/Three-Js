@@ -23,7 +23,7 @@ const Donut = (props) => {
                onPointerOut={(event) => setHover(false)}
                rotation={[0.01, 0.005, 0.01]}
                >
-                <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
+                <boxBufferGeometry attach="geometry" args={[1, 5, 10]} />
                 <torusGeometry args={[10, 3, 16, 100]} />
                 <meshStandardMaterial map={texture1} roughness={0.3}/>
             </mesh>

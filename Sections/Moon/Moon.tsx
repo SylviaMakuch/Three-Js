@@ -9,11 +9,11 @@ const Moon = (props) => {
     const [hovered, setHover] = useState(false)
     const [active, setActive] = useState(false)
     const ref = useRef()
-    useFrame((state, delta) => (ref.current.rotation.x += 0.01))
+    useFrame((state, delta) => (ref.current.rotation.y += 0.10))
     const texture1 = useLoader(TextureLoader, moon);
 
     return (
-        <group ref={ref} position={[0, -10, 50]}>
+        <group ref={ref} position={[-20, -10, 50]}>
             <mesh 
                {...props}
                scale={active ? 1.5 : 1}
