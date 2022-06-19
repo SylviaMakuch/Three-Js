@@ -8,7 +8,7 @@ module.exports = {
     devtool: "source-map",
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'own-me-gumball-machine.prod.js',
+        filename: 'three-js.prod.js',
     },
     module: {
         rules: [
@@ -31,7 +31,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif|woff(2)?|svg)$/i,
+                test: /\.(png|jpe?g|gif|jpg|woff(2)?|svg)$/i,
                 type: 'asset/resource'
             },
         ]

@@ -1,23 +1,29 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+import React, { Suspense } from "react";
 import styled from "styled-components";
+import ReactDOM from 'react-dom';
+import CameraController from "./Sections/CameraControls";
 import { Canvas } from "@react-three/fiber";
-import Donut from "./components/Donut/Donut";
+import Donut from "./Sections/Donut/Donut";
+import Background from "./Sections/Background";
 
-const AppContainer = styled.div`
-    position: relative;
-    height: 100%;
-    width: 100%;
-`;
+// const Background = styled.img`
+// `;
+
 
 function App() {
     return (
+    <>
+        <Suspense fallback={<div>Loading... </div>}>
         <Canvas>
+            <CameraController />
             <ambientLight color="white" intensity={0.5} />
             <pointLight color="white" position={[55, 55, 55]} />
             <perspectiveCamera position={[75, 0.1, 1000]} />
-            <Donut />
+            <Background />
+                <Donut />
         </Canvas>
+        </Suspense>
+    </>
     );
 };
 

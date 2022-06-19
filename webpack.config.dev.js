@@ -15,7 +15,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dev'),
-        filename: 'own-me-gumball-machine.bundle.dev.js',
+        filename: 'three-js.bundle.dev.js',
     },
     module: {
         rules: [
