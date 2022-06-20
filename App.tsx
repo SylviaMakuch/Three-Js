@@ -6,6 +6,7 @@ import Donut from "./Sections/Donut/Donut";
 import Background from "./Sections/Background/Background";
 import Moon from "./Sections/Moon/Moon";
 import Stars from "./Sections/Stars/Stars";
+import Cube from "./Sections/Cube/Cube";
 
 // const Background = styled.img`
 // `;
@@ -13,20 +14,21 @@ import Stars from "./Sections/Stars/Stars";
 
 function App() {
     return (
-    <>
-        <Suspense fallback={<div>Loading... </div>}>
-        <Canvas>
-            <CameraController />
-            <ambientLight color="white" intensity={0.5} />
-            <pointLight color="white" position={[55, 55, 55]} />
-            <perspectiveCamera position={[75, 0.1, 1000]} />
-            <Background />
-            <Stars />
-                <Donut />
-                <Moon />
-        </Canvas>
-        </Suspense>
-    </>
+        <>
+            <Suspense fallback={<div>Loading... </div>}>
+                <Canvas>
+                    <CameraController />
+                    <ambientLight color="white" intensity={0.5} />
+                    <pointLight color="white" position={[55, 55, 55]} />
+                    <perspectiveCamera position={[75, 0.1, 1000]} />
+                    <Background />
+                    <Stars />
+                    <Donut />
+                    <Cube />
+                    <Moon />
+                </Canvas>
+            </Suspense>
+        </>
     );
 };
 
