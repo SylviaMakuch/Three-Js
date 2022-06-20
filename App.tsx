@@ -7,11 +7,8 @@ import Background from "./Sections/Background/Background";
 import Moon from "./Sections/Moon/Moon";
 import Stars from "./Sections/Stars/Stars";
 import Cube from "./Sections/Cube/Cube";
-
-// const Background = styled.img`
-// `;
-
-
+import styled from "styled-components";
+ 
 function App() {
     return (
         <>
