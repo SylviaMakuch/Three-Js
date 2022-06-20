@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber";
 import Donut from "./Sections/Donut/Donut";
 import Background from "./Sections/Background/Background";
 import Moon from "./Sections/Moon/Moon";
-import Star from "./Sections/Star";
+import Stars from "./Sections/Stars/Stars";
 
 // const Background = styled.img`
 // `;
@@ -21,7 +21,7 @@ function App() {
             <pointLight color="white" position={[55, 55, 55]} />
             <perspectiveCamera position={[75, 0.1, 1000]} />
             <Background />
-            <Star />
+            <Stars />
                 <Donut />
                 <Moon />
         </Canvas>
