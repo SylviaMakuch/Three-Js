@@ -14,7 +14,7 @@ const Donut = (props) => {
     
    
     return (
-        <group ref={ref} position={[0, 0, 0]}>
+        <group ref={ref} position={[-10, 0, 0]}>
             <mesh 
                {...props}
                scale={active ? 1.5 : 1}
@@ -25,7 +25,7 @@ const Donut = (props) => {
                >
                 <boxBufferGeometry attach="geometry" args={[1, 5, 10]} />
                 <torusGeometry args={[10, 3, 16, 100]} />
-                <meshStandardMaterial map={texture1} roughness={0.3}/>
+                <meshStandardMaterial color={hovered?"pink": null} roughness={0.3} bumpScale={10} map={texture1} />
             </mesh>
         </group>
     )
